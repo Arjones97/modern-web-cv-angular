@@ -8,7 +8,7 @@
 
 **Plantilla profesional de CV web con animaciones interactivas, diseño responsive y fácil personalización**
 
-[Ver Demo](#-vista-previa) | [Características](#-características) | [Instalación](#-instalación-rápida)
+[Características](#-características) | [Instalación](#-instalación-rápida)
 
 </div>
 
