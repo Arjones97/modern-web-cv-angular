@@ -1,0 +1,14 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <a href="#" class="logo" (click)="scrollToTop($event)">{{ fullName }}</a>
+  
+  <button class="menu-toggle" (click)="toggleMenu()" [class.active]="menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <ul class="nav-menu" [class.active]="menuOpen">
+    <li><a href="#hero" class="nav-link" (click)="reloadPage($event); closeMenu()">Inicio</a></li>
+    <li><a href="/assets/cv.pdf" target="_blank" class="cv-button" (click)="closeMenu()">Mi CV</a></li>
+  </ul>
+</nav>
