@@ -1,10 +1,41 @@
-# Modern Web CV - Angular 🚀
+# 🌐 Modern Web CV - Angular 17
 
-Una plantilla moderna y atractiva de portafolio/CV web desarrollada con Angular 17. Perfecta para desarrolladores, diseñadores y profesionales que quieren destacar en línea con un CV interactivo y visualmente impactante.
+<div align="center">
 
-![Angular](https://img.shields.io/badge/Angular-17.3-DD0031?style=flat&logo=angular)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?style=flat&logo=typescript)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Angular](https://img.shields.io/badge/Angular-17.3-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+
+**Plantilla profesional de CV web con animaciones interactivas, diseño responsive y fácil personalización**
+
+[Ver Demo](#-vista-previa) | [Características](#-características) | [Instalación](#-instalación-rápida)
+
+</div>
+
+---
+
+<details>
+<summary><h2>📸 Ver Screenshots</h2></summary>
+
+<div align="center">
+
+### 🖥️ Vista Desktop
+![Vista Desktop](screenshots/full-screen.png)
+
+### 📱 Vista Móvil
+<img src="screenshots/mobile-view.png" alt="Vista Móvil" width="400">
+
+</div>
+
+</details>
+
+---
+
+## 📋 Descripción
+
+Template moderno y atractivo de portafolio/CV web desarrollado con Angular 17. Incluye partículas animadas, transiciones suaves y un diseño profesional totalmente personalizable.
+
+Perfecto para desarrolladores, diseñadores y profesionales tech que quieren destacar con un CV digital moderno, interactivo y visualmente impactante.
 
 ## ✨ Características
 
@@ -16,16 +47,8 @@ Una plantilla moderna y atractiva de portafolio/CV web desarrollada con Angular 
 - 🎯 **Navegación fluida** - Scroll suave entre secciones
 - 🌈 **Tipografías modernas** - Google Fonts (Poppins y Montserrat)
 - ⚡ **Componentes standalone** - Arquitectura Angular 17 moderna
-- 🎨 **Totalmente personalizable** - Todos los datos son fáciles de modificar
-- 📝 **Bien documentado** - Comentarios claros en el código
-
-## 📸 Vista Previa
-
-### 🖥️ Vista Desktop
-![Vista Desktop](screenshots/full-screen.png)
-
-### 📱 Vista Móvil
-![Vista Móvil](screenshots/mobile-view.png)
+- 🎨 **Totalmente personalizable** - Todos los datos son fáciles de modificar mediante placeholders
+- 📝 **Bien documentado** - Comentarios explicativos en todo el código
 
 ---
 
@@ -61,133 +84,67 @@ npm install -g @angular/cli@17.3.17
 
 ## 🚀 Instalación Rápida
 
-### 1. Clonar el repositorio
 ```bash
+# 1. Clonar el repositorio
 git clone https://github.com/Arjones97/modern-web-cv-angular.git
 cd modern-web-cv-angular
-```
 
-### 2. Instalar dependencias
-```bash
+# 2. Instalar dependencias
 npm install
+
+# 3. Personalizar con tus datos
+# Los archivos incluyen placeholders y comentarios guía
+
+# 4. Iniciar servidor de desarrollo
+npm start
+
+# 5. Abrir en navegador
+# http://localhost:4200
 ```
-
-### 3. Ejecutar en desarrollo
-```bash
-ng serve
-```
-
-### 4. Abrir en el navegador
-Abre tu navegador y ve a: **http://localhost:4200**
-
-## ⚙️ Personalización
-
-### 🎯 Guía Paso a Paso
-
-#### 1. **Información Personal (Hero Section)**
-
-Edita: `src/app/components/hero/hero.component.ts`
-
-```typescript
-// Cambia estos valores con tu información
-fullName = 'Tu Nombre Completo';
-subtitle = 'Tu Título Profesional';
-profileImage = 'assets/profile.jpeg';
-
-socialLinks = {
-  linkedin: 'https://www.linkedin.com/in/tu-perfil/',
-  github: 'https://github.com/tu-usuario',
-  email: 'mailto:tu-email@ejemplo.com',
-  // Añade más redes si lo deseas
-};
-```
-
-#### 2. **Sección Acerca de Mí**
-
-Edita: `src/app/components/about/about.component.html`
-
-```html
-<!-- Personaliza los párrafos con tu propia historia -->
-<p class="about-text">
-  Tu descripción personal aquí...
-</p>
-```
-
-**Fotos**: Coloca tus imágenes personales en `/assets/`:
-- `photo1.jpeg`, `photo2.jpeg`, `photo3.jpeg`
-- Recomendado: 800x600px o similar
-
-#### 3. **Experiencia Laboral**
-
-Edita: `src/app/components/experience/experience.component.html`
-
-El componente incluye ejemplos completos de:
-- Graduación/Formación académica
-- Experiencias laborales con múltiples proyectos
-- Tech stack de cada proyecto
-- Fechas y descripciones
-
-Simplemente reemplaza los datos de ejemplo con tu propia experiencia.
-
-#### 4. **Habilidades**
-
-Edita: `src/app/components/skills/skills.component.html`
-
-Personaliza las tarjetas de habilidades y ajusta las valoraciones con estrellas:
-- ⭐⭐⭐⭐⭐ - Experto
-- ⭐⭐⭐⭐ - Avanzado
-- ⭐⭐⭐ - Intermedio
-- ⭐⭐ - Básico
-
-#### 5. **Imágenes y Fotos**
-
-**⚠️ IMPORTANTE**: El template incluye imágenes de demostración para que veas cómo funciona al instalar:
-
-**Imágenes incluidas (DEBES REEMPLAZARLAS):**
-- `profile.jpeg` - Foto de perfil en el hero
-- `img1.jpg` - Foto 1 de la galería en "Acerca de Mí"
-- `img2.jpg` - Foto 2 de la galería en "Acerca de Mí"
-- `img3.jpg` - Foto 3 de la galería en "Acerca de Mí"
-- `cv.pdf` - PDF de ejemplo para el botón "Mi CV"
-
-**Para personalizarlas:**
-
-1. **Foto de perfil** (`src/assets/profile.jpeg`):
-   - Tamaño: 500x500px (cuadrada)
-   - Formato: JPG, PNG o WEBP
-   - Debe verse bien en círculo
-
-2. **Galería de fotos** (`src/assets/img1.jpg`, `img2.jpg`, `img3.jpg`):
-   - Tamaño recomendado: 800x600px o ratio 4:3
-   - Pueden ser fotos de: hobbies, eventos, viajes, actividades, etc.
-   - Mantén los mismos nombres o actualiza las rutas en `about.component.html`
-
-3. **CV en PDF** (`src/assets/cv.pdf`):
-   - Reemplaza con tu CV real
-   - Tamaño recomendado: menos de 5MB
-
-#### 6. **Colores y Tema**
-
-Para cambiar la paleta de colores, edita las variables CSS en cada archivo `.component.css`:
-- Color primario (actualmente: `#2c3e50`)
-- Color secundario (actualmente: `#3498db`)
-- Gradientes de fondo
 
 ---
 
-## 📦 Compilar para Producción
+## 📝 Personalización
 
-```bash
-ng build --configuration production
-```
+**¡Es muy fácil! Solo edita los componentes siguiendo los comentarios:**
 
-Los archivos compilados estarán en `dist/`
+### 🎯 Personalización Básica
+
+| Sección | Archivo | Descripción |
+|---------|---------|-------------|
+| **Información Personal** | `src/app/components/hero/hero.component.ts` | Nombre, título, foto de perfil y redes sociales |
+| **Acerca de Mí** | `src/app/components/about/about.component.html` | Descripción personal y galería de fotos |
+| **Experiencia** | `src/app/components/experience/experience.component.html` | Trayectoria laboral, proyectos y tecnologías |
+| **Habilidades** | `src/app/components/skills/skills.component.html` | Skills técnicas con valoración por estrellas |
+| **Footer** | `src/app/components/footer/footer.component.html` | Copyright y enlaces a redes |
+
+### 📸 Imágenes Incluidas
+
+**⚠️ El template incluye imágenes de demostración. Reemplázalas con las tuyas:**
+
+- `profile.jpeg` - Foto de perfil (500x500px recomendado)
+- `img1.jpg`, `img2.jpg`, `img3.jpg` - Galería de fotos (800x600px)
+- `cv.pdf` - Tu CV en PDF
+
+Todas en: `src/assets/`
 
 ---
 
-## 🌐 Despliegue
+## 📦 Comandos Disponibles
 
-Puedes desplegar fácilmente en:
+```bash
+npm start          # Servidor de desarrollo (puerto 4200)
+npm run build      # Compilar para producción
+npm test           # Ejecutar tests unitarios
+npm run watch      # Compilar en modo watch
+```
+
+---
+
+<details>
+<summary><h2>🌐 Despliegue</h2></summary>
+
+Puedes desplegar fácilmente en múltiples plataformas:
 
 ### GitHub Pages
 ```bash
@@ -214,43 +171,10 @@ firebase init hosting
 firebase deploy
 ```
 
----
+</details>
 
-## 📝 Scripts Disponibles
-
-```bash
-npm start           # Servidor de desarrollo
-ng serve           # Igual que npm start
-ng build           # Compilar para producción
-ng test            # Ejecutar tests unitarios
-```
-
----
-
-## 🎯 Estructura del Proyecto
-
-```
-src/
-├── app/
-│   ├── components/
-│   │   ├── navbar/          # Barra de navegación
-│   │   ├── hero/            # Sección principal con foto
-│   │   ├── about/           # Acerca de mí + galería fotos
-│   │   ├── skills/          # Habilidades técnicas
-│   │   ├── experience/      # Timeline de experiencia
-│   │   ├── contact/         # Sección de contacto (opcional)
-│   │   └── footer/          # Pie de página
-│   ├── app.component.*      # Componente raíz con partículas
-│   ├── app.config.ts        # Configuración de la app
-│   └── app.routes.ts        # Rutas (si las necesitas)
-├── assets/                  # Imágenes y recursos
-├── styles.css              # Estilos globales
-└── index.html              # HTML principal
-```
-
----
-
-## 🎨 Personalización Avanzada
+<details>
+<summary><h2>🎨 Personalización Avanzada</h2></summary>
 
 ### Configuración de Partículas
 
@@ -285,19 +209,50 @@ Personaliza delays y efectos en los archivos HTML:
 
 Efectos disponibles: `fade-up`, `fade-down`, `fade-right`, `fade-left`, `zoom-in`, `flip-up`, etc.
 
----
+### Cambiar Colores del Tema
 
-## 💡 Mejores Prácticas
+Edita las variables CSS en `src/styles.css`:
 
-1. **Optimiza tus imágenes** antes de subirlas (usa TinyPNG o similar)
-2. **Mantén el código limpio** - Los comentarios te guían en cada sección
-3. **Actualiza meta tags** en `index.html` para mejor SEO
-4. **Usa Git** para versionar tus cambios
-5. **Testea en múltiples dispositivos** para asegurar responsividad
+```css
+:root {
+  --midnight-dark: #2c3e50;    /* Color principal oscuro */
+  --midnight-light: #3498db;   /* Color de acento */
+}
+```
 
----
+</details>
 
-## 🐛 Solución de Problemas
+<details>
+<summary><h2>🎯 Estructura del Proyecto</h2></summary>
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── navbar/          # Barra de navegación
+│   │   ├── hero/            # Sección principal con foto
+│   │   ├── about/           # Acerca de mí + galería fotos
+│   │   ├── skills/          # Habilidades técnicas
+│   │   ├── experience/      # Timeline de experiencia
+│   │   ├── contact/         # Sección de contacto (opcional)
+│   │   └── footer/          # Pie de página
+│   ├── app.component.*      # Componente raíz con partículas
+│   ├── app.config.ts        # Configuración de la app
+│   └── app.routes.ts        # Rutas (si las necesitas)
+├── assets/                  # Imágenes y recursos
+│   ├── profile.jpeg         # 👈 Tu foto de perfil
+│   ├── img1.jpg            # 👈 Foto galería 1
+│   ├── img2.jpg            # 👈 Foto galería 2
+│   ├── img3.jpg            # 👈 Foto galería 3
+│   └── cv.pdf              # 👈 Tu CV en PDF
+├── styles.css              # Estilos globales
+└── index.html              # HTML principal
+```
+
+</details>
+
+<details>
+<summary><h2>🐛 Solución de Problemas</h2></summary>
 
 ### Las partículas no se muestran
 - Verifica que `NgxParticlesModule` esté importado en `app.config.ts`
@@ -314,6 +269,29 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
+</details>
+
+---
+
+## 🛠️ Tecnologías
+
+| Categoría | Tecnologías |
+|-----------|-------------|
+| **Framework** | Angular 17.3, TypeScript 5.4, RxJS 7.8 |
+| **Animaciones** | tsparticles 3.0, AOS 2.3.4 |
+| **UI/Iconos** | Font Awesome 7.1.0, Angular Material 17.3 |
+| **Estilos** | CSS3 Variables, Grid, Flexbox, Google Fonts |
+
+---
+
+## 💡 Mejores Prácticas
+
+1. ✅ **Optimiza imágenes** antes de subirlas (usa TinyPNG o similar)
+2. ✅ **Sigue los comentarios** del código para personalizar correctamente
+3. ✅ **Actualiza meta tags** en `index.html` para mejor SEO
+4. ✅ **Usa Git** para versionar tus cambios
+5. ✅ **Testea en múltiples dispositivos** para asegurar responsividad
+
 ---
 
 ## 🤝 Contribuciones
@@ -328,11 +306,15 @@ npm install
 
 ---
 
-## 📄 Licencia
+## 📜 Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
-Esto significa que puedes usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del software libremente.
+Puedes:
+- ✅ Usar comercialmente
+- ✅ Modificar
+- ✅ Distribuir
+- ✅ Uso privado
 
 ---
 
@@ -354,13 +336,20 @@ Si usas esta plantilla, ¡me encantaría ver tu CV! No olvides darle una ⭐ al 
 
 ---
 
-## 📧 Contacto y Soporte
+## 📧 Contacto
 
-¿Tienes preguntas o necesitas ayuda? 
+¿Tienes preguntas o sugerencias?
 
-- Abre un [Issue](https://github.com/Arjones97/modern-web-cv-angular/issues)
-- Revisa la [documentación de Angular](https://angular.io/docs)
+- 📫 Abre un [Issue](https://github.com/Arjones97/modern-web-cv-angular/issues)
+- 💬 Comparte tu CV creado con este template
+- ⭐ Da una estrella si te fue útil
 
 ---
 
-**¡Disfruta creando tu CV web! 🚀**
+<div align="center">
+
+**Hecho con ❤️ usando Angular 17**
+
+⭐ Star this repo if you find it useful!
+
+</div>
